@@ -1,0 +1,39 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Rocket Survey Form</h1>
+        <p id="description">A short survey form for rockets.</p>
+        <div id="form-div">
+            <form action="" id="survey-form">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required>
+                <label for="number" id="number-label">Age (optional):</label>
+                <input type="number" name="number" id="number" class="form-control" placeholder="Enter your age in numbers" min="10" max="102">
+                <label for="role">What rocket do you prefer?</label>
+                <select name="role" id="dropdown" class="form-control">
+                    <option disabled selected value="none">Select your prefered rocket</option>
+                    <option value="falcon9">Falcon 9 (SpaceX)</option>
+                    <option value="saturnV">Saturn V (NASA)</option>
+                    <option value="starship">Starship (SpaceX)</option>
+                    <option value="soyuz">Soyuz (Roscosmos)</option>
+                    <option value="newGlenn">New Glenn (Blue Origin)</option>
+                </select>
+                <label for="fuel" id="radio-label">Which fuel do you prefer?</label>
+                <label class="radio-form"><input type="radio" name="fuel" class="radio-form" value="kerosene">LOX and highly refined kerosene (RP-1)</label>
+                <label class="radio-form"><input type="radio" name="fuel" class="radio-form" value="hydrogen">LOX and liquid hydrogen</label>
+                <label class="radio-form"><input type="radio" name="fuel" class="radio-form" value="methane">LOX and liquid methane</label>
+                <label for="company">Wich rokcet company do you prefer?</label>
+                <label class="checkbox-form"><input type="checkbox" name="company" class="checkbox-form" value="spacex">SpaceX</label>
+                <label class="checkbox-form"><input type="checkbox" name="company" class="checkbox-form" value="blueorigin">Blue Origin</label>
+                <label class="checkbox-form"><input type="checkbox" name="company" class="checkbox-form" value="astra">Astra</label>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments-textarea" cols="30" rows="10"></textarea>
+                <input type="submit" name="submit" id="submit" class="form-control" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
